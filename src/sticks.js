@@ -17,8 +17,15 @@ stick lengths     length of cut     sticks before cut
 - - - - - 3         3                 1
 - - - - - -         done              done
 */
-function solution(arr){
-  // TODO: Create the solution
+function solution(arr) {
+	// TODO: Create the solution
+	beforeCut = [];
+	lengthCut = [];
+
+	for (i = 0; i < arr; i++) {
+		let leftover = arr[i] - Math.min(arr[i]);
+		beforeCut.push(leftover);
+	}
 }
 
 module.exports = solution;
